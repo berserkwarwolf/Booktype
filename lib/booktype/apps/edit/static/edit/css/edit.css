@@ -578,6 +578,14 @@ div.contentHeader span.info-message {
     border: 1px solid #A1A1A1;
 }
 
+#contenteditor div.group_img {
+    overflow: auto;
+}
+
+#contenteditor div.group_img::-webkit-scrollbar {
+    display: none;
+}
+
 #contenteditor div.group_img div.caption_small,
 #contentrevision div.group_img div.caption_small {
     display: inline-block;
@@ -624,12 +632,26 @@ div.contentHeader span.info-message {
     width: 250px;
 }
 
-div.bk-image-editor-ui-controls div.tooltip{
+div.bk-image-editor-ui-controls div.tooltip {
     top: -30px !important;
 }
 
-div.bk-image-editor-ui-controls div.toggle{
+div.bk-image-editor-ui-controls div.toggle {
     margin-bottom: 2px;
+}
+
+div.bk-image-layout-ui-controls img {
+    border: 2px solid #ebebeb;
+    margin: 5px;
+}
+
+div.bk-image-layout-ui-controls img:hover {
+    border: 2px solid #FF6600;
+    cursor: pointer;
+}
+
+div.bk-image-layout-ui-controls img.selected {
+    border: 2px solid #FF6600;
 }
 
 #contenteditor .aloha-block-InfoBoxBlock {
@@ -648,6 +670,29 @@ div.bk-image-editor-ui-controls div.toggle{
   padding-bottom: 0px;
   padding-left: 6px;
   padding-right: 20px;
+}
+
+.image-layout-1image_1caption_left div.image {
+    float: right;
+}
+
+.image-layout-1image_1caption_right div.image {
+    float: left;
+}
+
+.image-layout-2images div.image,
+.image-layout-2images_1caption_bottom div.image,
+.image-layout-2images_2captions_bottom div.image {
+    vertical-align: top;
+}
+
+.image-layout-1image_1caption_right div.caption_small {
+      margin-left: 15px;
+}
+
+.image-layout-2images_2captions_bottom div.wrap {
+    vertical-align: top;
+    display: inline-block;
 }
 
 #contenteditor .aloha-block-InfoBoxBlock .box-caption .aloha-editable {
